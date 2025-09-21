@@ -16,6 +16,7 @@ To make a map, you will need to structure it in a certain way so that TT3 can un
 	- Lighting (Folder)
 	- MaterialVariants (Folder)
 ```
+![A diagram of the above structure](../../static/images/docs/maps/map-structure-1.png)
 
 Beyond this, there are no hard requirements on how your map is structured. So lets take a look at what each of these does:
 
