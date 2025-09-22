@@ -20,10 +20,10 @@ Returns a MapThing, given a descendant instance (or the instance itself), and a 
 
 ### Parameters
 
-| Name | Type | Description |
-| --- | --- | --- |
-| `descendant` | `Instance` | The descendant instance (or the instance itself) of the MapThing to find. |
-| `tag` | `string` | The tag to search for. |
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `descendant` | `Instance` | | The descendant instance (or the instance itself) of the MapThing to find. |
+| `tag` | `string` | | The tag to search for. |
 
 ### Returns
 `MapThing?`

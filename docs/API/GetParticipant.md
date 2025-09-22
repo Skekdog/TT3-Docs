@@ -20,9 +20,9 @@ Returns a Participant given their name, player object, character model, or insta
 
 ### Parameters
 
-| Name | Type | Description |
-| --- | --- | --- |
-| `identifier` | `Instance \| string` | The participant's name, player object, character model, or instance of their character model. |
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `identifier` | `Instance \| string` | | The participant's name, player object, character model, or instance of their character model. |
 
 ### Returns
 `Participant?`
