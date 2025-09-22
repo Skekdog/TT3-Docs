@@ -10,6 +10,12 @@ This API is only accessible from the server.
 
 :::
 
+:::tip
+
+This API is a module. You should specify function names when using this API.
+
+:::
+
 ## `MakeExplosion(params, sound)`
 
 Creates an explosion at the specified position with the specified damage, radius, and sound.

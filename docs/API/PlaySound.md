@@ -2,13 +2,13 @@
 sidebar_position: 8
 ---
 
-:::tip
+:::info
 
 This API can be used from both the client and the server.
 
 :::
 
-:::tip
+:::warning
 
 This API uses metatables to act as both a module and a function.
 

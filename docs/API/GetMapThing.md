@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # GetMapThing
 
-:::tip
+:::info
 
 This API can be used from both the client and the server.
 
