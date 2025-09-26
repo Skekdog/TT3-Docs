@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Round | Traitor Town 3</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://skekdog.github.io/TT3-Docs/img/social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://skekdog.github.io/TT3-Docs/img/social-card.jpg"><meta data-rh="true" property="og:url" content="https://skekdog.github.io/TT3-Docs/Classes/Round"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Round | Traitor Town 3"><meta data-rh="true" name="description" content="The round represents the current state of the game. There is only ever one round at a time; you can get the current round in code using the GetRound API."><meta data-rh="true" property="og:description" content="The round represents the current state of the game. There is only ever one round at a time; you can get the current round in code using the GetRound API."><link data-rh="true" rel="icon" href="/TT3-Docs/images/favicon.ico"><link data-rh="true" rel="canonical" href="https://skekdog.github.io/TT3-Docs/Classes/Round"><link data-rh="true" rel="alternate" href="https://skekdog.github.io/TT3-Docs/Classes/Round" hreflang="en"><link data-rh="true" rel="alternate" href="https://skekdog.github.io/TT3-Docs/Classes/Round" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Round","item":"https://skekdog.github.io/TT3-Docs/Classes/Round"}]}</script><link rel="stylesheet" href="/TT3-Docs/assets/css/styles.b182b188.css">
-<script src="/TT3-Docs/assets/js/runtime~main.ef9c2f3d.js" defer="defer"></script>
-<script src="/TT3-Docs/assets/js/main.d8ac70dc.js" defer="defer"></script>
+<script src="/TT3-Docs/assets/js/runtime~main.4fff4eb4.js" defer="defer"></script>
+<script src="/TT3-Docs/assets/js/main.5c51d4a8.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -45,61 +45,61 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="returns-3">Returns<a href="#returns-3" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h3>
 <p><code>Map</code></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="getitems">GetItems<a href="#getitems" class="hash-link" aria-label="Direct link to GetItems" title="Direct link to GetItems">​</a></h2>
-<p>Returns a dictionary of all <code>MapThings</code> to loaded <code>Items</code>.</p>
+<p>Returns a dictionary of all <code>MapObjects</code> to loaded <code>Items</code>.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="returns-4">Returns<a href="#returns-4" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h3>
-<p><code>{[MapThing]: AnyItem}</code></p>
+<p><code>{[MapObject]: AnyItem}</code></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="getitem">GetItem<a href="#getitem" class="hash-link" aria-label="Direct link to GetItem" title="Direct link to GetItem">​</a></h2>
-<p>Returns the <code>Item</code> given the <code>MapThing</code>. Returns <code>nil</code> if the item is not loaded.</p>
+<p>Returns the <code>Item</code> given the <code>MapObject</code>. Returns <code>nil</code> if the item is not loaded.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-4">Parameters<a href="#parameters-4" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h3>
-<table><thead><tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>mapThing</code></td><td><code>MapThing</code></td><td></td><td>The map thing.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>MapObject</code></td><td><code>MapObject</code></td><td></td><td>The map object.</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="returns-5">Returns<a href="#returns-5" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h3>
 <p><code>AnyItem?</code></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="loaditem">LoadItem<a href="#loaditem" class="hash-link" aria-label="Direct link to LoadItem" title="Direct link to LoadItem">​</a></h2>
-<p>Loads an item given a MapThing. If the item is already loaded, returns the existing item.</p>
+<p>Loads an item given a MapObject. If the item is already loaded, returns the existing item.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-5">Parameters<a href="#parameters-5" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h3>
-<table><thead><tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>mapThing</code></td><td><code>MapThing</code></td><td></td><td>The map thing.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>MapObject</code></td><td><code>MapObject</code></td><td></td><td>The map object.</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="returns-6">Returns<a href="#returns-6" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h3>
 <p><code>AnyItem</code></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="getammoboxes">GetAmmoBoxes<a href="#getammoboxes" class="hash-link" aria-label="Direct link to GetAmmoBoxes" title="Direct link to GetAmmoBoxes">​</a></h2>
-<p>Returns a dictionary of all <code>MapThings</code> to loaded <code>AmmoBoxes</code>.</p>
+<p>Returns a dictionary of all <code>MapObjects</code> to loaded <code>AmmoBoxes</code>.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="returns-7">Returns<a href="#returns-7" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h3>
-<p><code>{[MapThing]: AmmoBox}</code></p>
+<p><code>{[MapObject]: AmmoBox}</code></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="getammobox">GetAmmoBox<a href="#getammobox" class="hash-link" aria-label="Direct link to GetAmmoBox" title="Direct link to GetAmmoBox">​</a></h2>
-<p>Returns the <code>AmmoBox</code> given the <code>MapThing</code>. Returns <code>nil</code> if the ammo box is not loaded.</p>
+<p>Returns the <code>AmmoBox</code> given the <code>MapObject</code>. Returns <code>nil</code> if the ammo box is not loaded.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-6">Parameters<a href="#parameters-6" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h3>
-<table><thead><tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>mapThing</code></td><td><code>MapThing</code></td><td></td><td>The map thing.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>MapObject</code></td><td><code>MapObject</code></td><td></td><td>The map object.</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="returns-8">Returns<a href="#returns-8" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h3>
 <p><code>AmmoBox?</code></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="getinteractables">GetInteractables<a href="#getinteractables" class="hash-link" aria-label="Direct link to GetInteractables" title="Direct link to GetInteractables">​</a></h2>
-<p>Returns a dictionary of all <code>MapThings</code> to loaded <code>Interactables</code>.</p>
+<p>Returns a dictionary of all <code>MapObjects</code> to loaded <code>Interactables</code>.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="returns-9">Returns<a href="#returns-9" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h3>
-<p><code>{[MapThing]: Interactable}</code></p>
+<p><code>{[MapObject]: Interactable}</code></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="getinteractable">GetInteractable<a href="#getinteractable" class="hash-link" aria-label="Direct link to GetInteractable" title="Direct link to GetInteractable">​</a></h2>
-<p>Returns the <code>Interactable</code> given the <code>MapThing</code>. Returns <code>nil</code> if the interactable is not loaded.</p>
+<p>Returns the <code>Interactable</code> given the <code>MapObject</code>. Returns <code>nil</code> if the interactable is not loaded.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="addinteractable">AddInteractable<a href="#addinteractable" class="hash-link" aria-label="Direct link to AddInteractable" title="Direct link to AddInteractable">​</a></h2>
 <p>Loads a defined interactable in the round. Returns the loaded interactable.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-7">Parameters<a href="#parameters-7" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h3>
-<table><thead><tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>definition</code></td><td><code>InteractableDefinition</code></td><td></td><td>The interactable definition.</td></tr><tr><td><code>mapThing</code></td><td><code>MapThing?</code></td><td></td><td>The map thing. Can be nil.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>definition</code></td><td><code>InteractableDefinition</code></td><td></td><td>The interactable definition.</td></tr><tr><td><code>MapObject</code></td><td><code>MapObject?</code></td><td></td><td>The map object. Can be nil.</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="returns-10">Returns<a href="#returns-10" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h3>
 <p><code>Interactable</code></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-8">Parameters<a href="#parameters-8" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h3>
-<table><thead><tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>mapThing</code></td><td><code>MapThing</code></td><td></td><td>The map thing.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>MapObject</code></td><td><code>MapObject</code></td><td></td><td>The map object.</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="returns-11">Returns<a href="#returns-11" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h3>
 <p><code>Interactable?</code></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="getprops">GetProps<a href="#getprops" class="hash-link" aria-label="Direct link to GetProps" title="Direct link to GetProps">​</a></h2>
-<p>Returns a dictionary of all <code>MapThings</code> to loaded <code>Props</code>.</p>
+<p>Returns a dictionary of all <code>MapObjects</code> to loaded <code>Props</code>.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="returns-12">Returns<a href="#returns-12" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h3>
-<p><code>{[MapThing]: Prop}</code></p>
+<p><code>{[MapObject]: Prop}</code></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="getprop">GetProp<a href="#getprop" class="hash-link" aria-label="Direct link to GetProp" title="Direct link to GetProp">​</a></h2>
-<p>Returns the <code>Prop</code> given the <code>MapThing</code>. Returns <code>nil</code> if the prop is not loaded.</p>
+<p>Returns the <code>Prop</code> given the <code>MapObject</code>. Returns <code>nil</code> if the prop is not loaded.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-9">Parameters<a href="#parameters-9" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h3>
-<table><thead><tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>mapThing</code></td><td><code>MapThing</code></td><td></td><td>The map thing.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>MapObject</code></td><td><code>MapObject</code></td><td></td><td>The map object.</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="returns-13">Returns<a href="#returns-13" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h3>
 <p><code>Prop?</code></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="loadprop">LoadProp<a href="#loadprop" class="hash-link" aria-label="Direct link to LoadProp" title="Direct link to LoadProp">​</a></h2>
-<p>Loads a prop given a MapThing. If the prop is already loaded, returns the existing prop.</p>
+<p>Loads a prop given a MapObject. If the prop is already loaded, returns the existing prop.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-10">Parameters<a href="#parameters-10" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h3>
-<table><thead><tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>mapThing</code></td><td><code>MapThing</code></td><td></td><td>The map thing.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>MapObject</code></td><td><code>MapObject</code></td><td></td><td>The map object.</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="returns-14">Returns<a href="#returns-14" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h3>
 <p><code>Prop</code></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="getparticipants">GetParticipants<a href="#getparticipants" class="hash-link" aria-label="Direct link to GetParticipants" title="Direct link to GetParticipants">​</a></h2>
