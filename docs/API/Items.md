@@ -58,6 +58,12 @@ This API will only return base-game items.
 
 Copies the specified `AnyItemDefinition` and applies the specified modifications.
 
+:::note
+
+To set a property to `nil`, you should use a table, like so: `{__nil = true}`.
+
+:::
+
 ### Parameters
 
 | Name | Type | Default | Description |
