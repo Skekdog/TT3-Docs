@@ -63,7 +63,7 @@ export type InteractableDefinition = {
 
     DefaultHintText: string?, -- Sets the default hint shown to players.
 
-    Model: MapThing?, -- When defining interactables for maps, you should leave this `nil`.
+    Model: MapObject?, -- When defining interactables for maps, you should leave this `nil`.
 
     IsContinuousInteraction: boolean, -- If true, OnInteract will be called repeatedly until the player releases the interaction key or moves out of range.
     InteractionRange: number, -- The maximum distance at which the player can interact with the interactable.

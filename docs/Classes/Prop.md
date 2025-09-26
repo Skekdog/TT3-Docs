@@ -16,9 +16,9 @@ Always set to "Prop". Used to differentiate between classes.
 
 ## Model
 
-`Type: MapThing`
+`Type: MapObject`
 
-The `MapThing` of the prop.
+The `MapObject` of the prop.
 
 ## Extras
 

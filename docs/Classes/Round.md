@@ -92,21 +92,21 @@ Returns the current map. Errors if no map is loaded (which should never happen).
 
 ## GetItems
 
-Returns a dictionary of all `MapThings` to loaded `Items`.
+Returns a dictionary of all `MapObjects` to loaded `Items`.
 
 ### Returns
 
-`{[MapThing]: AnyItem}`
+`{[MapObject]: AnyItem}`
 
 ## GetItem
 
-Returns the `Item` given the `MapThing`. Returns `nil` if the item is not loaded.
+Returns the `Item` given the `MapObject`. Returns `nil` if the item is not loaded.
 
 ### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `mapThing` | `MapThing` |  | The map thing. |
+| `MapObject` | `MapObject` |  | The map object. |
 
 ### Returns
 
@@ -114,13 +114,13 @@ Returns the `Item` given the `MapThing`. Returns `nil` if the item is not loaded
 
 ## LoadItem
 
-Loads an item given a MapThing. If the item is already loaded, returns the existing item.
+Loads an item given a MapObject. If the item is already loaded, returns the existing item.
 
 ### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `mapThing` | `MapThing` |  | The map thing. |
+| `MapObject` | `MapObject` |  | The map object. |
 
 ### Returns
 
@@ -128,21 +128,21 @@ Loads an item given a MapThing. If the item is already loaded, returns the exist
 
 ## GetAmmoBoxes
 
-Returns a dictionary of all `MapThings` to loaded `AmmoBoxes`.
+Returns a dictionary of all `MapObjects` to loaded `AmmoBoxes`.
 
 ### Returns
 
-`{[MapThing]: AmmoBox}`
+`{[MapObject]: AmmoBox}`
 
 ## GetAmmoBox
 
-Returns the `AmmoBox` given the `MapThing`. Returns `nil` if the ammo box is not loaded.
+Returns the `AmmoBox` given the `MapObject`. Returns `nil` if the ammo box is not loaded.
 
 ### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `mapThing` | `MapThing` |  | The map thing. |
+| `MapObject` | `MapObject` |  | The map object. |
 
 ### Returns
 
@@ -150,15 +150,15 @@ Returns the `AmmoBox` given the `MapThing`. Returns `nil` if the ammo box is not
 
 ## GetInteractables
 
-Returns a dictionary of all `MapThings` to loaded `Interactables`.
+Returns a dictionary of all `MapObjects` to loaded `Interactables`.
 
 ### Returns
 
-`{[MapThing]: Interactable}`
+`{[MapObject]: Interactable}`
 
 ## GetInteractable
 
-Returns the `Interactable` given the `MapThing`. Returns `nil` if the interactable is not loaded.
+Returns the `Interactable` given the `MapObject`. Returns `nil` if the interactable is not loaded.
 
 ## AddInteractable
 
@@ -169,7 +169,7 @@ Loads a defined interactable in the round. Returns the loaded interactable.
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `definition` | `InteractableDefinition` |  | The interactable definition. |
-| `mapThing` | `MapThing?` |  | The map thing. Can be nil. |
+| `MapObject` | `MapObject?` |  | The map object. Can be nil. |
 
 ### Returns
 
@@ -179,7 +179,7 @@ Loads a defined interactable in the round. Returns the loaded interactable.
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `mapThing` | `MapThing` |  | The map thing. |
+| `MapObject` | `MapObject` |  | The map object. |
 
 ### Returns
 
@@ -187,21 +187,21 @@ Loads a defined interactable in the round. Returns the loaded interactable.
 
 ## GetProps
 
-Returns a dictionary of all `MapThings` to loaded `Props`.
+Returns a dictionary of all `MapObjects` to loaded `Props`.
 
 ### Returns
 
-`{[MapThing]: Prop}`
+`{[MapObject]: Prop}`
 
 ## GetProp
 
-Returns the `Prop` given the `MapThing`. Returns `nil` if the prop is not loaded.
+Returns the `Prop` given the `MapObject`. Returns `nil` if the prop is not loaded.
 
 ### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `mapThing` | `MapThing` |  | The map thing. |
+| `MapObject` | `MapObject` |  | The map object. |
 
 ### Returns
 
@@ -209,13 +209,13 @@ Returns the `Prop` given the `MapThing`. Returns `nil` if the prop is not loaded
 
 ## LoadProp
 
-Loads a prop given a MapThing. If the prop is already loaded, returns the existing prop.
+Loads a prop given a MapObject. If the prop is already loaded, returns the existing prop.
 
 ### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `mapThing` | `MapThing` |  | The map thing. |
+| `MapObject` | `MapObject` |  | The map object. |
 
 ### Returns
 

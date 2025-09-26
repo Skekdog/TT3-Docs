@@ -28,7 +28,7 @@ The `ItemDefinition` of the item.
 
 ## Model
 
-`Type: MapThing`
+`Type: MapObject`
 
 The model of the item. This is a clone of the model from `ItemDefinition.Model`. Nil if `ItemDefinition.Model` is nil.
 

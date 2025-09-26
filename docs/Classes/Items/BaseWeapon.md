@@ -10,7 +10,7 @@ These properties and methods are common to all weapon items (`GrenadeWeapon`, `G
 
 ## Model
 
-`Type: MapThing`
+`Type: MapObject`
 
 The model of the weapon. This is a clone of the model from `ItemDefinition.Model`.
 
