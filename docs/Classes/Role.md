@@ -44,6 +44,14 @@ Returns the name of the role, formatted with the role color using rich text.
 
 `string`
 
+## GetPluralName
+
+Returns the plural form of the role name, unformatted.
+
+### Returns
+
+`string`
+
 ## GetExclamatoryString
 
 Returns `"!"` if `RoleDefinition.IsExclamatory` is true, `"."` otherwise.
