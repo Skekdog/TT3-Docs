@@ -10,26 +10,26 @@ There are several types used to specify different groups of items.
 
 ### GunMeleeWeapon
 
-`GunWeapon | MeleeWeapon`
+`Type: GunWeapon | MeleeWeapon`
 
 ### AnyWeapon
 
-`GunWeapon | GrenadeWeapon | MeleeWeapon`
+`Type: GunWeapon | GrenadeWeapon | MeleeWeapon`
 
 ### AnyItem
 
-`Item | AnyWeapon`
+`Type: Item | AnyWeapon`
 
 ### ItemBeforeHit
 
-`AnyWeapon | ExplosionParams`
+`Type: AnyWeapon | ExplosionParams`
 
 ## Definitions
 
 ### AnyItemDefinition
 
-`ItemDefinition | GunWeaponDefinition | MeleeWeaponDefinition | GrenadeWeaponDefinition`
+`Type: ItemDefinition | GunWeaponDefinition | MeleeWeaponDefinition | GrenadeWeaponDefinition`
 
 ### ItemDefinitionOnHitClient
 
-`GunWeaponDefinition | MeleeWeaponDefinition | GrenadeWeaponDefinition`
+`Type: GunWeaponDefinition | MeleeWeaponDefinition | GrenadeWeaponDefinition`
