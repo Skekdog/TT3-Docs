@@ -4,7 +4,9 @@ sidebar_position: 3
 
 # Prop
 
-The prop class represents a prop loaded in the current map. See also: [Props](/Maps/Props.md).
+The prop class represents a prop loaded in the current map.
+
+See also: [Maps.Props](/Maps/Props.md).
 
 ## Properties
 

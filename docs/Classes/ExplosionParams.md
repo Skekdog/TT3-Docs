@@ -4,7 +4,9 @@ sidebar_position: 7
 
 # ExplosionParams
 
-`ExplosionParams` contains the specific info about an explosion that is about to occur. See also: [`ExplosionInfo`](/Classes/Types/ExplosionInfo).
+`ExplosionParams` contains the specific info about an explosion that is about to occur.
+
+See also: [`ExplosionInfo`](/Classes/Types/ExplosionInfo).
 
 ## Properties
 

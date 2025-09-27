@@ -4,7 +4,9 @@ sidebar_position: 1.5
 
 # ExplosionInfo
 
-`ExplosionInfo` is a table that contains basic properties about an explosion. See also: [`ExplosionParams`](/Classes/ExplosionParams).
+`ExplosionInfo` is a table that contains basic properties about an explosion.
+
+See also: [`ExplosionParams`](/Classes/ExplosionParams).
 
 ## Properties
 

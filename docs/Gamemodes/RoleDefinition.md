@@ -6,6 +6,8 @@ sidebar_position: 3
 
 Roles are... well they're roles. Gamemodes can define roles and specify them in the `Roles` field of the `GamemodeDefinition`.
 
+See also: [`Classes.Role`](/Classes/Role.md)
+
 ## Properties
 
 ### Kind

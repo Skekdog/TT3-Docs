@@ -6,6 +6,8 @@ sidebar_position: 4
 
 Represents a map. Used to access the active structure of the map, and to get the map definition.
 
+See also: [`Maps.Intro`](/Maps/Intro.md)
+
 ## Properties
 
 ### Definition

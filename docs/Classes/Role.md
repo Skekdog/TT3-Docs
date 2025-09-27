@@ -6,6 +6,8 @@ sidebar_position: 5
 
 A loaded role. You can get a `Role` object using `Round:GetRoleFromRoleName()`, or through `Participant:GetRole()`.
 
+See also: [`Gamemodes.RoleDefinition`](/Gamemodes/RoleDefinition.md).
+
 ## Properties
 
 ### Kind
