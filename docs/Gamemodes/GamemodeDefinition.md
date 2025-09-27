@@ -109,3 +109,216 @@ A dictionary of role name to definitions. This table specifies the available rol
 `Type: RoleDefinition?`
 
 Specifies a role that can be called to investigate a corpse. If nil, no roles can be called to corpses.
+
+## Functions
+
+These functions should be thought of as properties, more so than hooks. They should be pure, and should not have any side-effects (that is, they return a value, and do not modify the game in any other way).
+
+### Duration
+
+Called when the round starts. Returns an amount of time, in seconds, that the round should last for.
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| round | `Round` | The current round. |
+| numParticipants | `number` | The number of participants in the round. |
+
+#### Returns
+
+`number`
+
+### GetRoundEndMusic
+
+Called when the round ends. Returns a `Sound` or `nil`. If returning a `Sound`, it will be played for all players.
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| round | `Round` | The current round. |
+| victor | `Victor` | The victor of the round. |
+| isTimeout | `boolean` | Whether the round ended by timeout. |
+
+#### Returns
+
+`Sound?`
+
+### GetVictoryEventText
+
+:::note
+
+This function is optional. You may omit it if you wish.
+
+:::
+
+Called when the round ends. Returns a `string`, which will be displayed in the event log at the end of the round. If returning `nil`, a default message will be displayed.
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| round | `Round` | The current round. |
+| victor | `Victor` | The victor of the round. |
+| isTimeout | `boolean` | Whether the round ended by timeout. |
+
+#### Returns
+
+`string?`
+
+### TimeoutVictor
+
+Called when the round runs out of time. Returns a `Victor` that will be declared the victor.
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| round | `Round` | The current round. |
+
+#### Returns
+
+`Victor`
+
+## Hooks
+
+Hooks are functions which are run on the server when a relevant event occurs. They are used to implement the gamemode's behaviors.
+
+:::note
+
+All hooks are optional and may be omitted if not needed.
+
+:::
+
+### AssignRoles
+
+Called with a shuffled list of participants when the round starts. Used to assign roles to participants.
+
+:::note
+
+Some gamemodes may wish to assign roles later in the round, they may omit this hook.
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| round | `Round` | The current round. |
+| participants | `{Participant}` | A shuffled list of participants in the round. |
+
+### OnStart
+
+Called when the round starts.
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| round | `Round` | The current round. |
+
+### OnFinish
+
+Called when the round ends.
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| round | `Round` | The current round. |
+
+### OnCharacterAdded
+
+Called when a `Participant`'s character is loaded.
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| round | `Round` | The current round. |
+| participant | `Participant` | The participant whose character was loaded. |
+
+### OnDeath
+
+Called when a `Participant` dies or disconnects (when alive). This hook is only called when the round is in progress; pre-game or post-game deaths will not call this hook.<br/><br/>This hook is commonly used to determine if the round has been won.
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| round | `Round` | The current round. |
+| participant | `Participant` | The participant that died or disconnected. |
+
+### OnIdentifyCorpse
+
+Called when a `Participant`'s corpse is identified by someone. This hook is also called when a kill is confirmed via another corpse's kill list.
+
+:::note
+
+Unlike `OnDeath`, this hook **will** be called even if the round is not in progress.
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| round | `Round` | The current round. |
+| corpse | `Corpse` | The corpse that was identified. |
+| searcher | `Participant` | The participant that identified the corpse.
+
+### OnItemEquipped
+
+Called when a `Participant` equips / unequips an item.
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| round | `Round` | The current round. |
+| participant | `Participant` | The participant that equipped / unequipped the item. |
+| item | `AnyItem` | The item that was equipped / unequipped. |
+| equipped | `boolean` | Whether the item was equipped or unequipped. |
+
+### AddFinishHighlights
+
+Called when the round ends. Used to calculate and add additional highlights to the round.
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| round | `Round` | The current round. |
+
+### BeforeDamageParticipant
+
+Called before a `Participant` takes damage. This hook returns a `boolean`, which should be true if the damage should be applied, or false otherwise. This is called before item-specific `BeforeHitParticipant` hooks, but after `BeforeHitAnything` hooks.
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| round | `Round` | The current round. |
+| participant | `Participant` | The participant that is being damaged. |
+| params | `DamageParams` | The damage parameters. |
+
+#### Returns
+
+`boolean`
+
+### BeforeDamageProp
+
+Called before a `Prop` takes damage. This hook returns a `boolean`, which should be true if the damage should be applied, or false otherwise. This is called before item-specific `BeforeHitProp` hooks, but after `BeforeHitAnything` hooks.
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| round | `Round` | The current round. |
+| prop | `Prop` | The prop that is being damaged. |
+| params | `DamageParams` | The damage parameters. |
+
+#### Returns
+
+`boolean`
