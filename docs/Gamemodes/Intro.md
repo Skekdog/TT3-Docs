@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
-# Gamemodes
+# Intro
 
-There is currently no official way to load custom gamemodes. However, this section will still document features of gamemodes, like item definitions and defined interactables.
+Gamemodes define the rules and behaviors of the gameplay. They work in conjunction with maps to provide the entire game experience. Unlike maps, scripting ability is generally required to make complex gamemodes.
+
+This section also covers features which can be used in maps too.
