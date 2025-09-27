@@ -8,19 +8,71 @@ A `Participant` represents a player in the round. You can get a `Participant` us
 
 ## Properties
 
-| Name | Type | Description |
-| --- | --- | --- |
-Extras | `Extras` | Extra data for the participant. |
-Player | `Player` | The player associated with this participant. |
-Round | `Round` | The round that this participant is in. |
-DidParticipate | `boolean` | Whether or not the participant has ever joined the round. |
-SlayVotes | `{Participant}` | A list of participants that have voted to slay this participant after being RDMed by them. |
-Corpse | `Corpse` | The corpse of this participant. |
-ExtraCorpseIcons | `{CorpseIcon}` | A list of additional corpse icons for this participant. |
-CorpseSearchDistance | `number` | The max distance that the participant can interact with a corpse from. |
-KillList | `{Participant}` | A list of participants that this participant has killed. |
-Scores | `ScoreTable` | A table of scores for this participant. |
-ItemPurchases | `ItemPurchases` | A table of items that this participant has purchased, to the number of times they have done so. |
+### Kind
+
+`Type: "Participant"`
+
+Always set to "Participant". Used to differentiate between classes.
+
+### Extras
+
+`Type: Extras`
+
+Extra data for the participant.
+
+### Player
+
+`Type: Player`
+
+The player associated with this participant.
+
+### Round
+
+`Type: Round`
+
+The round that this participant is in.
+
+### SlayVotes
+
+`Type: {Participant}`
+
+A list of participants that have voted to slay this participant after being RDMed by them.
+
+### Corpse
+
+`Type: Corpse?`
+
+The corpse of this participant. Will always be `nil` if the participant is not dead.
+
+### ExtraCorpseIcons
+
+`Type: {CorpseIcon}`
+
+A list of additional corpse icons for this participant.
+
+### CorpseSearchDistance
+
+`Type: number`
+
+The max distance that the participant can interact with a corpse from.
+
+### KillList
+
+`Type: {Participant}`
+
+A list of participants that this participant has killed.
+
+### Scores
+
+`Type: ScoreTable`
+
+A table of scores for this participant.
+
+### ItemPurchases
+
+`Type: ItemPurchases`
+
+A table of items that this participant has purchased, to the number of times they have done so.
 
 ## Methods
 
