@@ -133,9 +133,9 @@ Sets the role of the participant to the given role definition. Unsets the role i
 
 `()`
 
-## IsBadGuy
+## IsEvil
 
-Returns true if the participant's role is a bad guy. The default role is not set to be a bad guy.
+Returns true if the participant's role is evil. The default role is not set to be evil.
 
 ### Returns
 

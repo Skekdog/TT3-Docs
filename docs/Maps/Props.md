@@ -51,11 +51,11 @@ return require(game:GetService("ReplicatedStorage").Assets.MapPrefabs.PrefabName
 ```lua
 --!strict
 -- Prop.OnBreak
--- When this prop is broken, it will make the attacker a free kill if they are not a bad guy (Traitor).
+-- When this prop is broken, it will make the attacker a free kill if they are not evil (a Traitor).
 -- An example usage of this is for a traitor tester.
 
 return function(prop: Types.Prop, params: Types.DamageParams): ()
-	if params.Attacker and not params.Attacker:IsBadGuy() then
+	if params.Attacker and not params.Attacker:IsEvil() then
 		params.Attacker:SetFreeKill("destroyed the prop")
 	end
 end
