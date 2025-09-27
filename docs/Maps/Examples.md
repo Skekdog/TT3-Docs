@@ -13,4 +13,4 @@ Often the best way to learn is by example. Fortunately, here are some maps you c
 
 ## By Me
 
-- [Test Map](/map-examples/test-map.rbxm)
+- [Test Map](/map-examples/testmap.rbxm)
