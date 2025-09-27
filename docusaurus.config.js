@@ -50,6 +50,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           routeBasePath: '/',
+          remarkPlugins: [require("./plugins/remark-promote-headers").default]
         },
         theme: {
           customCss: './src/css/custom.css',
