@@ -12,27 +12,27 @@ This class does **not** inherit additional properties or methods from `BaseWeapo
 
 These are properties specific to generic items.
 
-# Properties
+## Properties
 
-## Kind
+### Kind
 
 `Type: "Item"`
 
 Always set to "Item". Used to differentiate between classes.
 
-## Definition
+### Definition
 
 `Type: ItemDefinition`
 
 The `ItemDefinition` of the item.
 
-## Model
+### Model
 
 `Type: MapObject`
 
 The model of the item. This is a clone of the model from `ItemDefinition.Model`. Nil if `ItemDefinition.Model` is nil.
 
-## Extras
+### Extras
 
 `Type: Extras`
 

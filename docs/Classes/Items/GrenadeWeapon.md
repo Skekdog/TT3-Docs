@@ -12,15 +12,15 @@ This class inherits additional properties and methods from `BaseWeapon`.
 
 These are properties specific to grenades.
 
-# Properties
+## Properties
 
-## Kind
+### Kind
 
 `Type: "Grenade"`
 
 Always set to "Grenade". Used to differentiate between classes.
 
-## Definition
+### Definition
 
 `Type: GrenadeWeaponDefinition`
 

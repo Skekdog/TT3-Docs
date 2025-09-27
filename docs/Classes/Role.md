@@ -6,70 +6,70 @@ sidebar_position: 5
 
 A loaded role. You can get a `Role` object using `Round:GetRoleFromRoleName()`, or through `Participant:GetRole()`.
 
-# Properties
+## Properties
 
-## Kind
+### Kind
 
 `Type: "Role"`
 
 Always set to "Role". Used to differentiate between classes.
 
-## Definition
+### Definition
 
 `Type: RoleDefinition`
 
 The `RoleDefinition` of the role.
 
-# Methods
+## Methods
 
-## IsAlliedWith
+### IsAlliedWith
 
 Returns true if the role is allied with the given role.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `role` | `Role` |  | The role to check. |
 
-### Returns
+#### Returns
 
 `boolean`
 
-## GetFormattedName
+### GetFormattedName
 
 Returns the name of the role, formatted with the role color using rich text.
 
-### Returns
+#### Returns
 
 `string`
 
-## GetPluralName
+### GetPluralName
 
 Returns the plural form of the role name, unformatted.
 
-### Returns
+#### Returns
 
 `string`
 
-## GetExclamatoryString
+### GetExclamatoryString
 
 Returns `"!"` if `RoleDefinition.IsExclamatory` is true, `"."` otherwise.
 
-### Returns
+#### Returns
 
 `string`
 
-## FormatString
+### FormatString
 
 Returns the string, formatted with the role color using rich text.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `str` | `string` |  | The string to format. |
 
-### Returns
+#### Returns
 
 `string`

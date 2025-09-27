@@ -6,7 +6,7 @@ sidebar_position: 1
 
 The `round` represents the current state of the game. There is only ever one round at a time; you can get the current round in code using the [`GetRound`](/API/GetRound) API.
 
-# Types
+## Types
 
 ```lua
 type VictoryData = {
@@ -17,7 +17,7 @@ type VictoryData = {
 },
 ```
 
-# Properties
+## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -28,404 +28,404 @@ type VictoryData = {
 | `PhaseLength` | `number` | The max duration of the current phase. |
 | `VictoryData` | `VictoryData?` | The victory data for the round. Readonly. |
 
-# Methods
+## Methods
 
-## GetItemDefinition
+### GetItemDefinition
 
 Returns the item definition given the name of the item. When an maps and gamemodes define items with the same name, map item definitions are prioritised over gamemode item definitions.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `name` | `string` |  | The name of the item. |
 
-### Returns
+#### Returns
 
 `AnyItemDefinition?`
 
-## GetAmmoDefinition
+### GetAmmoDefinition
 
 Returns the ammo definition given the name of the ammo. When an maps and gamemodes define ammo with the same name, map ammo definitions are prioritised over gamemode ammo definitions.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `name` | `string` |  | The name of the ammo. |
 
-### Returns
+#### Returns
 
 `AnyAmmoDefinition?`
 
-## GetInteractableDefinition
+### GetInteractableDefinition
 
 Returns a defined interactable given the name of the interactable. When an maps and gamemodes define interactables with the same name, map interactable definitions are prioritised over gamemode interactable definitions.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `name` | `string` |  | The name of the interactable. |
 
-### Returns
+#### Returns
 
 `InteractableDefinition?`
 
-## LoadMap
+### LoadMap
 
 Loads a map.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `map` | `Map` |  | The map. |
 
-## GetMap
+### GetMap
 
 Returns the current map. Errors if no map is loaded (which should never happen).
 
-### Returns
+#### Returns
 
 `Map`
 
-## GetItems
+### GetItems
 
 Returns a dictionary of all `MapObjects` to loaded `Items`.
 
-### Returns
+#### Returns
 
 `{[MapObject]: AnyItem}`
 
-## GetItem
+### GetItem
 
 Returns the `Item` given the `MapObject`. Returns `nil` if the item is not loaded.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `MapObject` | `MapObject` |  | The map object. |
 
-### Returns
+#### Returns
 
 `AnyItem?`
 
-## LoadItem
+### LoadItem
 
 Loads an item given a MapObject. If the item is already loaded, returns the existing item.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `MapObject` | `MapObject` |  | The map object. |
 
-### Returns
+#### Returns
 
 `AnyItem`
 
-## GetAmmoBoxes
+### GetAmmoBoxes
 
 Returns a dictionary of all `MapObjects` to loaded `AmmoBoxes`.
 
-### Returns
+#### Returns
 
 `{[MapObject]: AmmoBox}`
 
-## GetAmmoBox
+### GetAmmoBox
 
 Returns the `AmmoBox` given the `MapObject`. Returns `nil` if the ammo box is not loaded.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `MapObject` | `MapObject` |  | The map object. |
 
-### Returns
+#### Returns
 
 `AmmoBox?`
 
-## GetInteractables
+### GetInteractables
 
 Returns a dictionary of all `MapObjects` to loaded `Interactables`.
 
-### Returns
+#### Returns
 
 `{[MapObject]: Interactable}`
 
-## GetInteractable
+### GetInteractable
 
 Returns the `Interactable` given the `MapObject`. Returns `nil` if the interactable is not loaded.
 
-## AddInteractable
+### AddInteractable
 
 Loads a defined interactable in the round. Returns the loaded interactable.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `definition` | `InteractableDefinition` |  | The interactable definition. |
 | `MapObject` | `MapObject?` |  | The map object. Can be nil. |
 
-### Returns
+#### Returns
 
 `Interactable`
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `MapObject` | `MapObject` |  | The map object. |
 
-### Returns
+#### Returns
 
 `Interactable?`
 
-## GetProps
+### GetProps
 
 Returns a dictionary of all `MapObjects` to loaded `Props`.
 
-### Returns
+#### Returns
 
 `{[MapObject]: Prop}`
 
-## GetProp
+### GetProp
 
 Returns the `Prop` given the `MapObject`. Returns `nil` if the prop is not loaded.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `MapObject` | `MapObject` |  | The map object. |
 
-### Returns
+#### Returns
 
 `Prop?`
 
-## LoadProp
+### LoadProp
 
 Loads a prop given a MapObject. If the prop is already loaded, returns the existing prop.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `MapObject` | `MapObject` |  | The map object. |
 
-### Returns
+#### Returns
 
 `Prop`
 
-## GetParticipants
+### GetParticipants
 
 Returns a dictionary of usernames to participants.
 
-### Returns
+#### Returns
 
 `{string: Participant}`
 
-## GetParticipant
+### GetParticipant
 
 Returns the participant given the username, player object, character model, or instance of their character model. Returns `nil` if the participant is not found.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `identifier` | `Instance \| string` |  | The participant's name, player object, character model, or instance of their character model. |
 
-### Returns
+#### Returns
 
 `Participant?`
 
-## AddPlayer
+### AddPlayer
 
 Loads a player to the round, optionally with karma. Returns the participant.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `player` | `Player` |  | The player to load. |
 | `karma` | `number?` | 1000 | The player's karma. |
 
-### Returns
+#### Returns
 
 `Participant`
 
-## RemoveParticipant
+### RemoveParticipant
 
 Removes a participant from the round.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `participant` | `Participant` |  | The participant to remove. |
 | `isRejoining` | `boolean` | | True if this participant is going to be re-added after being removed. |
 
-### Returns
+#### Returns
 
 `()`
 
-## AddEvent
+### AddEvent
 
 Adds an event to the event log. Note this accepts event data, not events.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `event` | `RoundEventData` |  | The event to add. |
 
-### Returns
+#### Returns
 
 `()`
 
-## GetEventLog
+### GetEventLog
 
 Returns the event log. Note, the event log does not store event data, but rather events.
 
-### Returns
+#### Returns
 
 `{Event}`
 
-## AddHighlight
+### AddHighlight
 
 Adds a highlight to the round. Highlights are stored by group - if a highlight group already exists, it will be overwritten if the new highlight has a higher priority.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `highlight` | `Highlight` |  | The highlight to add. |
 
-### Returns
+#### Returns
 
 `()`
 
-## GetPhase
+### GetPhase
 
 Returns the current phase of the round.
 
-### Returns
+#### Returns
 
 `Phase`
 
-## SetPhase
+### SetPhase
 
 Changes the phase of the round, for a specified duration.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `phase` | `Phase` |  | The phase to change to. |
 | `duration` | `number` |  | The duration of the phase. |
 
-### Returns
+#### Returns
 
 `()`
 
-## IsPreGame
+### IsPreGame
 
 Returns true if the round is in the waiting or preparing phase.
 
-### Returns
+#### Returns
 
 `boolean`
 
-## IsInProgress
+### IsInProgress
 
 Returns true if the round is in the playing phase.
 
-### Returns
+#### Returns
 
 `boolean`
 
-## IsPostGame
+### IsPostGame
 
 Returns true if the round is in the highlights or intermission phase.
 
-### Returns
+#### Returns
 
 `boolean`
 
-## Pause
+### Pause
 
 Pauses or unpauses the round.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `paused` | `boolean` |  | Whether to pause or unpause the round. |
 
-### Returns
+#### Returns
 
 `()`
 
-## IsPaused
+### IsPaused
 
 Returns true if the round is paused.
 
-### Returns
+#### Returns
 
 `boolean`
 
-## Finish
+### Finish
 
 Ends the round with a victory for a certain participant or role. Also specifies if the round ended in a timeout.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `victor` | `Victor` |  | The victor of the round. |
 | `didTimeout` | `boolean` |  | True if the round ended in a timeout. |
 
-### Returns
+#### Returns
 
 `()`
 
-## GetRoleFromRoleName
+### GetRoleFromRoleName
 
 Returns the role given the role name. Errors if the role is not found.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `roleName` | `string` |  | The role name. |
 
-### Returns
+#### Returns
 
 `Role`
 
-## GetParticipantsWithRole
+### GetParticipantsWithRole
 
 Returns all participants with a certain role.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `role` | `Role` |  | The role. |
 
-### Returns
+#### Returns
 
 `{Participant}`
 
-## SendMessage
+### SendMessage
 
 Sends a message (notification or chat message) to a player or group of players.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -433,6 +433,6 @@ Sends a message (notification or chat message) to a player or group of players.
 | `message` | `string` |  | The message to send. |
 | `kind` | `MessageKind?` | `"All"` | The kind of message to send. |
 
-### Returns
+#### Returns
 
 `()`

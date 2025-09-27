@@ -6,20 +6,20 @@ sidebar_position: 4
 
 Represents a map. Used to access the active structure of the map, and to get the map definition.
 
-# Properties
+## Properties
 
-## Definition
+### Definition
 
 The map definition. See also: [The MapScript](/Maps/The%20MapScript.md).
 
-## Map
+### Map
 
 The active `MapScript`. See also: [Structure](/Maps/Structure.md).
 
-## Static
+### Static
 
 The active `Static` folder. See also: [Structure](/Maps/Structure.md).
 
-## Dynamic
+### Dynamic
 
 The active `Dynamic` folder. See also: [Structure](/Maps/Structure.md).

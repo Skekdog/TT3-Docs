@@ -18,11 +18,11 @@ This API directly returns a function. You should not specify a function name.
 
 Returns a Participant given their name, player object, character model, or instance of their character model. Returns nil if no participant is found.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `identifier` | `Instance \| string` | | The participant's name, player object, character model, or instance of their character model. |
 
-### Returns
+#### Returns
 `Participant?`

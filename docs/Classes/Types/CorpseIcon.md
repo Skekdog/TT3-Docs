@@ -6,27 +6,27 @@ sidebar_position: 2
 
 Represents an additional corpse icon on a corpse. Corpse icons can be clicked to reveal their description.
 
-# Fields
+## Properties
 
-## Name
+### Name
 
 `Type: string`
 
 The name of the corpse icon. If no DisplayName is provided, the Name will be used.
 
-## DisplayName
+### DisplayName
 
 `Type: string?`
 
 The display name which will be displayed for the corpse icon.
 
-## Description
+### Description
 
 `Type: string`
 
 The description which will be displayed for the corpse icon.
 
-## Icon
+### Icon
 
 `Type: string`
 

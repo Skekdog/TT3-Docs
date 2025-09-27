@@ -2,6 +2,8 @@
 sidebar_position: 7.5
 ---
 
+# ScreenMessage
+
 :::info
 
 This API can be used from both the client and the server.
@@ -18,7 +20,7 @@ Displays an on-screen message to the player, with a specified format. Returns `n
 
 If format overrides are provided, they will be applied to the resulting `TextLabel`. Note that `Position` and `AnchorPoint` are not overridable.
 
-## Formats
+#### Formats
 
 - `Standard`: A standard message in white text with a black stroke.
 - `Error`: An error message in red text.
@@ -26,7 +28,7 @@ If format overrides are provided, they will be applied to the resulting `TextLab
 - `Success`: A success message in green text.
 - `Warn`: A warning message in orange text.
 
-## Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -35,5 +37,5 @@ If format overrides are provided, they will be applied to the resulting `TextLab
 | `formatOverrides` | `{LabelProperties: {[TextLabelProperty]: TextLabelPropertyValue}}?` | | A table of overrides to apply to the resulting TextLabel. |
 | `to` | `Player?` | | The player to display the message to. No effect when specified on the client. Must be provided when called from the server. |
 
-## Returns
+#### Returns
 `TextLabel?`

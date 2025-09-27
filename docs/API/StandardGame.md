@@ -24,9 +24,9 @@ This API will only return base-game items, ammo, and interactables. It will not 
 
 :::
 
-# Functions
+## Functions
 
-## CopyModify
+### CopyModify
 
 Copies the specified definition and applies the specified modifications.
 
@@ -36,79 +36,79 @@ To set a property to `nil`, you should use a table, like so: `{__nil = true}`.
 
 :::
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `original` | `T where T = AnyItemDefinition \| AmmoDefinition \| InteractableDefinition` | | The original definition. |
 | `modifications` | `{[PropertyName]: PropertyValue}` | | The modifications to apply. |
 
-### Returns
+#### Returns
 
 `T where T = AnyItemDefinition | AmmoDefinition | InteractableDefinition`
 
-## GetItem
+### GetItem
 
 Gets the specified `AnyItemDefinition`. Will error if the item is not found.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `name` | `string` | | The name of the item. |
 
-### Returns
+#### Returns
 
 `AnyItemDefinition`
 
-## GetItems
+### GetItems
 
 Gets all `AnyItemDefinition` objects.
 
-### Returns
+#### Returns
 
 `{[string]: AnyItemDefinition}`
 
-## GetAmmo
+### GetAmmo
 
 Gets the specified `AmmoDefinition`. Will error if the ammo is not found.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `name` | `string` | | The name of the ammo. |
 
-### Returns
+#### Returns
 
 `AmmoDefinition`
 
-## GetAmmos
+### GetAllAmmo
 
 Gets all `AmmoDefinition` objects.
 
-### Returns
+#### Returns
 
 `{[string]: AmmoDefinition}`
 
-## GetInteractable
+### GetInteractable
 
 Gets the specified `InteractableDefinition`. Will error if the interactable is not found.
 
-### Parameters
+#### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `name` | `string` | | The name of the interactable. |
 
-### Returns
+#### Returns
 
 `InteractableDefinition`
 
-## GetInteractables
+### GetInteractables
 
 Gets all `InteractableDefinition` objects.
 
-### Returns
+#### Returns
 
 `{[string]: InteractableDefinition}`

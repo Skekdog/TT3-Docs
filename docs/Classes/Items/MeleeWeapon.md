@@ -12,21 +12,21 @@ This class inherits additional properties and methods from `BaseWeapon`.
 
 These are properties specific to melee weapons.
 
-# Properties
+## Properties
 
-## Kind
+### Kind
 
 `Type: "Melee"`
 
 Always set to "Melee". Used to differentiate between classes.
 
-## Definition
+### Definition
 
 `Type: MeleeWeaponDefinition`
 
 The `MeleeWeaponDefinition` of the melee.
 
-## LastAttackTime
+### LastAttackTime
 
 `Type: number`
 

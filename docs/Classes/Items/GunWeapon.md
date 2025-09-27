@@ -12,33 +12,33 @@ This class inherits additional properties and methods from `BaseWeapon`.
 
 These are properties specific to gun weapons.
 
-# Properties
+## Properties
 
-## Kind
+### Kind
 
 `Type: "Gun"`
 
 Always set to "Gun". Used to differentiate between classes.
 
-## Definition
+### Definition
 
 `Type: GunWeaponDefinition`
 
 The `GunWeaponDefinition` of the weapon.
 
-## Ammo
+### Ammo
 
 `Type: number`
 
 The current amount of ammo loaded into the gun.
 
-## LastAttackTime
+### LastAttackTime
 
 `Type: number`
 
 The last time (as returned by `workspace:GetServerTimeNow()`) the gun was fired.
 
-## IsReloading
+### IsReloading
 
 `Type: boolean`
 
