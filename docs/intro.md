@@ -11,6 +11,6 @@ This website will document the map and gamemode creation process, as well as adv
 
 :::tip
 
-These docs are a work in progress! Some of them much more than others.
+Whilst these docs should be largely accurate, some issues may be present. If you spot anything wrong, please let me know!
 
 :::
