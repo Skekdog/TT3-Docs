@@ -112,3 +112,44 @@ Gets all `InteractableDefinition` objects.
 #### Returns
 
 `{[string]: InteractableDefinition}`
+
+## Module Functions
+
+:::info
+
+These functions are part of a sub-module of this API.
+
+:::
+
+### Highlights.OnDeath
+
+This function can be called from within a gamemode's `OnDeath` hook. This function will add highlights relating to the death.
+
+#### Parameters
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `round` | `Round` |  | The current round. |
+| `participant` | `Participant` |  | The participant that died. |
+
+### Highlights.OnIdentifyCorpse
+
+This function can be called from within a gamemode's `OnIdentifyCorpse` hook. This function will add highlights relating to the identification of corpses.
+
+#### Parameters
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `round` | `Round` |  | The current round. |
+| `corpse` | `Corpse` |  | The corpse that was identified. |
+| `searcher` | `Participant` |  | The participant that identified the corpse. |
+
+### Highlights.OnFinish
+
+This function can be called from within a gamemode's `OnFinish` hook. This function will add highlights that should be calculated at the end of the round.
+
+#### Parameters
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `round` | `Round` |  | The current round. |
