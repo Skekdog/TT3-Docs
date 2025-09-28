@@ -319,7 +319,7 @@ Returns the current phase of the round.
 
 ### SetPhase
 
-Changes the phase of the round, for a specified duration.
+Changes the phase of the round, for a specified duration, with an optional callback. Preparing, playing, and highlights phases have default callbacks; intermission and waiting do not.
 
 #### Parameters
 
@@ -327,6 +327,7 @@ Changes the phase of the round, for a specified duration.
 | --- | --- | --- | --- |
 | `phase` | `Phase` |  | The phase to change to. |
 | `duration` | `number` |  | The duration of the phase. |
+| `callback` | `false | () -> ()?` |  | The callback to run when the phase ends. Leave `nil` for default callback, or `false` for no callback. |
 
 #### Returns
 
