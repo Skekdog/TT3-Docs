@@ -261,15 +261,27 @@ Returns the participant's humanoid. Returns nil if the participant has no humano
 
 ### SpawnCharacter
 
-Spawns or respawns the participant's character. The character will spawn at a random PlayerSpawn in the map.
+Spawns or respawns the participant's character. The character will spawn at a random PlayerSpawn in the map. This first calls `DespawnCharacter`.
+
+:::note
+
+Calls to this will silently fail if the participant's character is already in the process of being spawned.
+
+:::
 
 #### Returns
 
 `()`
 
-### UnspawnCharacter
+### DespawnCharacter
 
-Unspawns the participant's character. No effect if the participant has no character.
+Despawns the participant's character, additionally dropping their items. No effect if the participant has no character.
+
+:::warning
+
+Calls to this will silently fail if the participant's character is currently in the process of being spawned.
+
+:::
 
 #### Returns
 
