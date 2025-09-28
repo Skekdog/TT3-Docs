@@ -31,6 +31,21 @@ const config = {
   projectName: 'TT3-Docs', // Usually your repo name.
   trailingSlash: false,
 
+  plugins: [
+    [
+      "@easyops-cn/docusaurus-search-local",
+      {
+        indexDocs: true,
+        indexBlog: false,
+        indexPages: false,
+        searchResultLimits: 4,
+        hashed: true,
+        language: "en",
+        docsRouteBasePath: "/",
+      },
+    ],
+  ],
+
   onBrokenLinks: 'throw',
 
   markdown: {
@@ -82,6 +97,7 @@ const config = {
             position: 'left',
             label: 'Home',
           },
+          { type: 'search', position: 'right' },
         ],
       },
       tableOfContents: {
