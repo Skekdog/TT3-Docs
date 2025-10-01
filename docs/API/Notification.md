@@ -4,9 +4,9 @@ sidebar_position: 7
 
 # Notification
 
-:::warning
+:::info
 
-This API is only accessible from the client.
+This API can be used from both the client and the server.
 
 :::
 
@@ -24,6 +24,7 @@ Creates a notification of the given kind with the given message.
 | --- | --- | --- | --- |
 | `message` | `string` | | The message to display. |
 | `kind` | `MessageKind?` | `"Chat"` | The kind of message to display. |
+| `to` | `Player?` | | The player to display the message to. If `nil`, the message will be sent to all players. |
 
 #### Returns
 `()`
