@@ -28,7 +28,7 @@ Impulses are not guaranteed to actually result in movement. You should not rely 
 
 ### CanImpulse
 
-Returns `true` if the object can be impusled, otherwise `false`. Currently, all objects which are not grounded (anchored) can be impulsed.
+Returns `true` if the object can be impusled, otherwise `false`. Currently, all objects which are not grounded (anchored) and are descendant of `Workspace` can be impulsed.
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Returns `true` if the object can be impusled, otherwise `false`. Currently, all 
 
 ### ApplyImpulse
 
-Applies an impulse to an object. If a participant is specified, any damage that the object deals will be credited to the participant. Additionally, the participant themselves will not take any damage.
+Applies an impulse to an object, calling `CanImpulse` first. If a participant is specified, any damage that the object deals will be credited to the participant. Additionally, the participant themselves will not take any damage.
 
 #### Parameters
 
