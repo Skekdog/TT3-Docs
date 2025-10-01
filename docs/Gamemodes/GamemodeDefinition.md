@@ -34,9 +34,9 @@ Lists the authors of the gamemode. Typically, you should use Roblox usernames, s
 
 ### MinimumPlayers
 
-`Type: number`
+`Type: number | () -> number`
 
-The minimum number of players before the round can begin.
+The minimum number of players before the round can begin. Can be a number or a function that returns a number - if a function, it will be called when the round loads.
 
 ### RequiredSlayVotes
 
