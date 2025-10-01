@@ -134,6 +134,12 @@ The projectile model to use for the gun. If `nil`, no projectile will be visible
 
 The speed, in studs per second, of the projectile. Defaults to `100`.
 
+### ImpulseForce
+
+`Type: number?`
+
+The magnitude of the impulse to apply to hit objects. Defaults to no impulse.
+
 ### BulletsPerShot
 
 `Type: number?`

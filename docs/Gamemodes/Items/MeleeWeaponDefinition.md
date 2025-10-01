@@ -56,6 +56,12 @@ The sound to play when the melee is used.
 
 The damage that the melee deals.
 
+### ImpulseForce
+
+`Type: number?`
+
+The magnitude of the impulse to apply to hit objects. Defaults to no impulse.
+
 ### MaxDistance
 
 `Type: number`
