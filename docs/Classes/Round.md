@@ -27,6 +27,7 @@ type VictoryData = {
 | `ElapsedPhaseTime` | `number` | The amount of time that has passed in the current phase. Resets when the phase changes. |
 | `PhaseLength` | `number` | The max duration of the current phase. |
 | `VictoryData` | `VictoryData?` | The victory data for the round. Readonly. |
+| `MinimumRequiredPlayers` | `number` | The minimum number of players required to start the game. This gets set by the gamemode when the round first loads. |
 
 ## Methods
 
