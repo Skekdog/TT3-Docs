@@ -50,7 +50,7 @@ Applies an impulse to an object. If a participant is specified, any damage that 
 | --- | --- | --- | --- |
 | part | `BasePart` | | The part to apply the impulse to. |
 | impulse | `Vector3` | | The impulse to apply. |
-| adjustForMass | `boolean` | | Whether to adjust the impulse for the object's mass. |
+| adjustForMass | `boolean` | | If `true`, the impulse will be multiplied by the object's `AssemblyMass`. |
 | position | `Vector3?` | `nil` | The position to apply the impulse at. If `nil`, the impulse will be applied at the part's center of mass. |
 | participant | `Participant?` | | The participant to credit damage to. |
 
