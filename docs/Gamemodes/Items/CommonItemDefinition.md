@@ -56,11 +56,21 @@ The maximum number of times that a single player can purchase this item. If `nil
 
 If true, this item will make non-evil players a free kill when they have it equipped.
 
-### Slot
+### ItemGroup
 
-`Type: number?`
+`Type: { PreferredSlot: number? }`
 
-The slot that this item is in. If `nil`, this item is passive and does not occupy a slot.
+The group that this item belongs to. Only one item from a group can be present in an inventory at a time. If `nil`, this item is passive and not part of any group. Item groups are denoted by the specific table reference, not PreferredSlot. You must use the same table when defining the item group.
+
+See also: [`API.StandardGame#ItemGroups`](/API/StandardGame#itemgroups).
+
+```lua
+local item: Types.ItemDefinition = {
+	...,
+	ItemGroup = StandardGame.ItemGroups.RoleUtility,
+	...,
+}
+```
 
 ### CanDrop
 

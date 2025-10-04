@@ -24,6 +24,18 @@ This API will only return base-game items, ammo, and interactables. It will not 
 
 :::
 
+## Properties
+
+### ItemGroups
+
+A table of all item groups:
+
+- `Secondary`
+- `Primary`
+- `Grenade`
+- `RoleWeapon`
+- `RoleUtility`
+
 ## Functions
 
 ### CopyModify
