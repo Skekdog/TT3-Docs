@@ -6,6 +6,8 @@ sidebar_position: 6
 
 An interactable is a special kind of prop that a player can interact with. To make something into an interactable, you should add the `Interactable` tag to it.
 
+Interactable models, including defined interactables, can have a `DisplayName` attribute, this will override the name displayed to the player. For defined interactables, if a display name attribute is set, it will be used instead of the definition's display name.
+
 :::note
 You also need the `Prop` tag.
 :::
