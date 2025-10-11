@@ -229,6 +229,20 @@ Returns the participant's username, formatted with their role colour.
 
 `string`
 
+### HasCorpseIcon
+
+Returns true if the participant already has a corpse icon of the specified name.
+
+#### Parameters
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `corpseIconName` | `string` |  | The name of the corpse icon. |
+
+#### Returns
+
+`boolean`
+
 ### AddCorpseIcon
 
 Adds a corpse icon when the participant is killed. This should be called before the participant is killed.
