@@ -4,6 +4,8 @@ sidebar_position: 1.5
 
 # Loading your map or gamemode
 
+See also: [Commands](/Commands.md).
+
 Once you have the general structure of your map or gamemode down, you may want to playtest and see it in action.
 
 To do this, you must first upload it to Roblox:
