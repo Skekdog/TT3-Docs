@@ -118,7 +118,7 @@ If true, this role will see a list of players who are dead, but no confirmed dea
 
 `Type: boolean?`
 
-Currently not implemented. If true, players with this role can privately chat to others with this role.
+If true, players with this role can privately chat to others with this role. This only applies to the specific role, not the allegiance.
 
 ### AwardCreditsToRolesOnDeath
 
