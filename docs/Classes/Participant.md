@@ -500,19 +500,19 @@ Attempts to drop the specified item. If unsuccessful, removes the item instead. 
 
 `boolean`
 
-### IsItemSlotOccupied
+### GetItemOccupyingGroup
 
-Returns true if the specified item slot is occupied.
+Returns `AnyItem` occupying the specified group. Returns nil if the group is empty.
 
 #### Parameters
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `slot` | `number` |  | The slot. |
+| `itemGroup` | `ItemGroup?` |  | The item group. If nil, this method will always return nil. |
 
 #### Returns
 
-`boolean`
+`AnyItem?`
 
 ### GetAmmo
 
