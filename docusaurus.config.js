@@ -83,7 +83,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/social-card.jpg',
+      image: 'images/social-card.jpg',
       navbar: {
         title: 'Traitor Town 3',
         logo: {
