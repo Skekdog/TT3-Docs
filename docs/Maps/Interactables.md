@@ -11,7 +11,9 @@ An interactable is a special kind of prop that a player can interact with. To ma
 Interactable models, including defined interactables, can have a `DisplayName` attribute, this will override the name displayed to the player. For defined interactables, if a display name attribute is set, it will be used instead of the definition's display name.
 
 :::note
+
 You also need the `Prop` tag.
+
 :::
 
 Now, there are three kinds of interactables: prefabs, defined interactables, and runtime interactables.
@@ -25,7 +27,23 @@ Currently, there are two prefab interactables:
 
 ### Doors
 
-The door format is currently volatile and subject to change; thus, only the baseline is documented: you should add an `Attachment`, named `DoorPivot`, to the door. This attachment acts as the hinge of the door.
+There are two types of doors: hinge doors and sliding doors. Hinge doors are created by added an `Attachment` with the name `DoorPivot` to the primary part of the door, which (unsurprisingly) acts as the hinge for the door. Sliding doors do not have a `DoorPivot`, and instead are created by setting the `DoorKind` attribute (on the door model, not the primary part) to `Slide`.
+
+Doors have a number of attributes which can be used for customisation. These attributes are all set on the door model, which may be a part or a model:
+
+- `DoorKind`: `Hinge` or `Slide`
+
+- `Duration`: The time it takes to open or close the door, in seconds. Defaults to 0.75s.
+- `OpeningDuration`: The time it takes to open the door, in seconds. If set, overrides `Duration`.
+- `ClosingDuration`: The time it takes to close the door, in seconds. If set, overrides `Duration`.
+
+- `AutoCloseAfter`: The time after the door has fully opened after which it will automatically close, in seconds. By default, doors will not close automatically.
+- `Locked`: If true, the door cannot be opened by players. It may still be possible to open the door programmatically.
+
+- `EasingStyle`: The easing style to use when opening or closing the door. Defaults to `Linear`.
+- `EasingDirection`: The easing direction to use when opening or closing the door. Defaults to `In`.
+
+Additionally, sliding doors have a `SlideAxis` attribute, a `Vector3` which determines the axis along which the door slides.
 
 ### Ladders
 
