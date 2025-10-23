@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.1">
 <title data-rh="true">Interactables | Traitor Town 3</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://skekdog.github.io/TT3-Docs/images/social-card.png"><meta data-rh="true" name="twitter:image" content="https://skekdog.github.io/TT3-Docs/images/social-card.png"><meta data-rh="true" property="og:url" content="https://skekdog.github.io/TT3-Docs/Maps/Interactables"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Interactables | Traitor Town 3"><meta data-rh="true" name="description" content="See also: Classes.Interactable."><meta data-rh="true" property="og:description" content="See also: Classes.Interactable."><link data-rh="true" rel="icon" href="/TT3-Docs/images/favicon.ico"><link data-rh="true" rel="canonical" href="https://skekdog.github.io/TT3-Docs/Maps/Interactables"><link data-rh="true" rel="alternate" href="https://skekdog.github.io/TT3-Docs/Maps/Interactables" hreflang="en"><link data-rh="true" rel="alternate" href="https://skekdog.github.io/TT3-Docs/Maps/Interactables" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Interactables","item":"https://skekdog.github.io/TT3-Docs/Maps/Interactables"}]}</script><link rel="stylesheet" href="/TT3-Docs/assets/css/styles.8d8dafce.css">
-<script src="/TT3-Docs/assets/js/runtime~main.4cf76471.js" defer="defer"></script>
+<script src="/TT3-Docs/assets/js/runtime~main.7f29ddc4.js" defer="defer"></script>
 <script src="/TT3-Docs/assets/js/main.324e3a67.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -25,7 +25,35 @@ Currently, there are two prefab interactables:</p>
 <li>Ladder</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="doors">Doors<a href="#doors" class="hash-link" aria-label="Direct link to Doors" title="Direct link to Doors" translate="no">​</a></h3>
-<p>The door format is currently volatile and subject to change; thus, only the baseline is documented: you should add an <code>Attachment</code>, named <code>DoorPivot</code>, to the door. This attachment acts as the hinge of the door.</p>
+<p>There are two types of doors: hinge doors and sliding doors. Hinge doors are created by added an <code>Attachment</code> with the name <code>DoorPivot</code> to the primary part of the door, which (unsurprisingly) acts as the hinge for the door. Sliding doors do not have a <code>DoorPivot</code>, and instead are created by setting the <code>DoorKind</code> attribute (on the door model, not the primary part) to <code>Slide</code>.</p>
+<p>Doors have a number of attributes which can be used for customisation. These attributes are all set on the door model, which may be a part or a model:</p>
+<ul>
+<li>
+<p><code>DoorKind</code>: <code>Hinge</code> or <code>Slide</code></p>
+</li>
+<li>
+<p><code>Duration</code>: The time it takes to open or close the door, in seconds. Defaults to 0.75s.</p>
+</li>
+<li>
+<p><code>OpeningDuration</code>: The time it takes to open the door, in seconds. If set, overrides <code>Duration</code>.</p>
+</li>
+<li>
+<p><code>ClosingDuration</code>: The time it takes to close the door, in seconds. If set, overrides <code>Duration</code>.</p>
+</li>
+<li>
+<p><code>AutoCloseAfter</code>: The time after the door has fully opened after which it will automatically close, in seconds. By default, doors will not close automatically.</p>
+</li>
+<li>
+<p><code>Locked</code>: If true, the door cannot be opened by players. It may still be possible to open the door programmatically.</p>
+</li>
+<li>
+<p><code>EasingStyle</code>: The easing style to use when opening or closing the door. Defaults to <code>Linear</code>.</p>
+</li>
+<li>
+<p><code>EasingDirection</code>: The easing direction to use when opening or closing the door. Defaults to <code>In</code>.</p>
+</li>
+</ul>
+<p>Additionally, sliding doors have a <code>SlideAxis</code> attribute, a <code>Vector3</code> which determines the axis along which the door slides.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="ladders">Ladders<a href="#ladders" class="hash-link" aria-label="Direct link to Ladders" title="Direct link to Ladders" translate="no">​</a></h3>
 <p>Unlike other interactables, ladders do not have to be under <code>Dynamic</code>. Players will climb ladders automatically when they touch them. Typically, ladders should be taller than their actual height, but shorter at the bottom.<br>
 If your ladder acts strangely, double-check the orientation.</p>
