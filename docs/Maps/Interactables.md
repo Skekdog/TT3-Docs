@@ -45,6 +45,8 @@ Doors have a number of attributes which can be used for customisation. These att
 
 Additionally, sliding doors have a `SlideAxis` attribute, a `Vector3` which determines the axis along which the door slides.
 
+Doors can also have customised open and close sounds. To do this, you should add a `Sounds` folder to the door model, with two subfolders, `Open` and `Close`. These folders should contain one or more `Sound` objects.
+
 ### Ladders
 
 Unlike other interactables, ladders do not have to be under `Dynamic`. Players will climb ladders automatically when they touch them. Typically, ladders should be taller than their actual height, but shorter at the bottom.<br/>
