@@ -90,6 +90,8 @@ If true, this item cannot be unequipped once equipped. This has no effect on pas
 
 The model of the item.
 
+This model can have a special attribute, `CanReplace`, which, if true, will allow the player to equip this item and replace normally non-removable items (such as the crowbar). This is used by Asylum's Golden Frying Pan item.
+
 ### HoldAnimation
 
 `Type: string?`
