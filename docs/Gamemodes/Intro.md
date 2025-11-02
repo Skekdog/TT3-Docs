@@ -8,4 +8,6 @@ Gamemodes define the rules and behaviors of the gameplay. They work in conjuncti
 
 This section also covers features which can be used in maps too.
 
+To start, you should install the [TT3 SDK](https://create.roblox.com/store/asset/107938745988414/) plugin. This plugin provides example gamemodes, API types, and the tools you need to successfully load your gamemode in-game.
+
 If you are looking to create interactables, refer to [`Maps.Interactables#Defined-Interactables`](/Maps/Interactables#defined-interactables).
