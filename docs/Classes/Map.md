@@ -4,24 +4,68 @@ sidebar_position: 4
 
 # Map
 
-Represents a map. Used to access the active structure of the map, and to get the map definition.
+Represents a map. Used to access the active structure of the map, and to get map info.
 
 See also: [`Maps.Intro`](/Maps/Intro.md)
 
 ## Properties
 
-### Definition
+### Structure
 
-The map definition. See also: [The MapScript](/Maps/The%20MapScript.md).
+`Type: Instance`
 
-### Map
+The map's loaded structure, as detailed in [Structure](/Maps/Structure.md).
 
-The active `MapScript`. See also: [Structure](/Maps/Structure.md).
+### Name
 
-### Static
+`Type: string`
 
-The active `Static` folder. See also: [Structure](/Maps/Structure.md).
+The map name.
 
-### Dynamic
+### DisplayName
 
-The active `Dynamic` folder. See also: [Structure](/Maps/Structure.md).
+`Type: string?`
+
+The map display name.
+
+### Description
+
+`Type: string`
+
+The map description.
+
+### Authors
+
+`Type: string`
+
+The map authors.
+
+### Icon
+
+`Type: string`
+
+The map icon.
+
+### Gravity
+
+`Type: number`
+
+The map gravity. Defaults to 80.
+
+### InteractableDefinitions
+
+`Type: {[string]: InteractableDefinition}`
+
+A map of custom interactable names to their definitions.
+
+### ItemDefinitions
+
+`Type: {[string]: ItemDefinition}`
+
+A map of custom item names to their definitions.
+
+### AmmoDefinitions
+
+`Type: {[string]: AmmoDefinition}`
+
+A map of custom ammo names to their definitions.
