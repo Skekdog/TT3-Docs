@@ -171,6 +171,7 @@ Loads a defined interactable in the round. Returns the loaded interactable.
 | --- | --- | --- | --- |
 | `definition` | `InteractableDefinition` |  | The interactable definition. |
 | `MapObject` | `MapObject?` |  | The map object. Can be nil. |
+| `deferLoad` | `boolean?` | `false` | Whether to defer the server load hook of the interactable. No effect on the client load. |
 
 #### Returns
 
