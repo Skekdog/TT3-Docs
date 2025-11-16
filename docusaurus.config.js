@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Traitor Town 3',
+  title: 'Traitor!',
   tagline: 'It seems this really is a traitor town',
   favicon: 'images/favicon.ico',
 
@@ -85,9 +85,9 @@ const config = {
       // Replace with your project's social card
       image: 'images/social-card.png',
       navbar: {
-        title: 'Traitor Town 3',
+        title: 'Traitor!',
         logo: {
-          alt: 'TT3 Logo',
+          alt: 'Traitor! Logo',
           src: 'images/logo.svg',
         },
         items: [
