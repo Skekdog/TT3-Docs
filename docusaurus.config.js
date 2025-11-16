@@ -23,12 +23,12 @@ const config = {
   url: 'https://skekdog.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/TT3-Docs/',
+  baseUrl: '/Traitor-Docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Skekdog', // Usually your GitHub org/user name.
-  projectName: 'TT3-Docs', // Usually your repo name.
+  projectName: 'Traitor-Docs', // Usually your repo name.
   trailingSlash: false,
 
   plugins: [
