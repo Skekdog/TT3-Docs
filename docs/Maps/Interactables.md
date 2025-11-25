@@ -37,6 +37,12 @@ Doors have a number of attributes which can be used for customisation. These att
 - `OpeningDuration`: The time it takes to open the door, in seconds. If set, overrides `Duration`.
 - `ClosingDuration`: The time it takes to close the door, in seconds. If set, overrides `Duration`.
 
+- `HingeRestrictDirection`: If true, the door will only open in a counter-clockwise direction.
+- `HingeRestrictDirectionClockwise`: If true, the door will only open in a clockwise direction.
+
+- `HingeOpenAngleCCW`: The angle, in degrees, that the door will open at when opened counter-clockwise. Defaults to -90.
+- `HingeOpenAngleCW`: The angle, in degrees, that the door will open at when opened clockwise. Defaults to 90.
+
 - `AutoCloseAfter`: The time after the door has fully opened after which it will automatically close, in seconds. By default, doors will not close automatically.
 - `Locked`: If true, the door cannot be opened by players. It may still be possible to open the door programmatically.
 
