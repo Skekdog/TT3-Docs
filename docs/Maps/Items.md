@@ -38,6 +38,7 @@ See also: [`Classes.Item`](/Classes/Items/Item), [`Gamemodes.CommonItemDefinitio
 - `Teleporter`
 - `Golden Gun`
 - `UMP`
+- `FreezeGrenade` (Freeze Grenade)
 <br/>
 - `Crowbar`
 - `Magneto Stick`
