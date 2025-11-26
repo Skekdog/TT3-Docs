@@ -132,7 +132,7 @@ The projectile model to use for the gun. If `nil`, no projectile will be visible
 
 `Type: number?`
 
-The speed, in studs per second, of the projectile. Defaults to `100`.
+The speed, in studs per second, of the projectile. Defaults to `100`. If `IsPhysicallySimulated` is `true`, this value will determine the initial force to apply to the projectile, which will be multiplied by the projectile's mass.
 
 ### ImpulseForce
 
@@ -163,6 +163,12 @@ The horizontal recoil, in arbitrary units. For reference, the HUGE has a RecoilX
 `Type: number?`
 
 The vertical recoil, in arbitrary units. For reference, the HUGE has a RecoilY of 2.0, and the G18 has a RecoilY of 0.8.
+
+### IsPhysicallySimulated
+
+`Type: boolean?`
+
+If true, the projectile will be simulated by the physics engine. Defaults to `false`, meaning weapons are hitscan. If `true`, `Projectile` and `ProjectileSpeed` are required.
 
 ## Hooks
 
