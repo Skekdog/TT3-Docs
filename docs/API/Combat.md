@@ -28,6 +28,9 @@ export type CombatAPIExplosionParams = {
 	FalloffEnd: number,
 	Attacker: Participant?,
 	IgnoreKarma: boolean?,
+	Pressure: number?,
+	VisualRadius: number?,
+	BeforeHitParticipant: BeforeHitParticipant?,
 }
 ```
 
@@ -41,7 +44,7 @@ Creates an explosion at the specified position with the specified damage, radius
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `params` | `CombatAPIExplosionParams` | `FalloffBegin = 0` | The parameters for the explosion. |
+| `params` | `CombatAPIExplosionParams` | `FalloffBegin = 0, Pressure = Damage * 50, IgnoreKarma = false, VisualRadius = FalloffEnd` | The parameters for the explosion. |
 | `sound` | `Sound?` | `default explosion sound` | The sound to play when the explosion happens.<br/>A default sound is used if not provided. |
 
 #### Returns
