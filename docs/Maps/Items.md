@@ -30,6 +30,7 @@ See also: [`Classes.Item`](/Classes/Items/Item), [`Gamemodes.CommonItemDefinitio
 - `Flare Gun`
 - `Newton Launcher`
 - `Poltergeist`
+- `MelonLauncher`
 <br/>
 - `DNAScanner` (DNA Scanner)
 - `Defuser`
