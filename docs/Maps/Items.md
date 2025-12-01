@@ -46,6 +46,8 @@ See also: [`Classes.Item`](/Classes/Items/Item), [`Gamemodes.CommonItemDefinitio
 <br/>
 - `Super Shotgun`
 - `Golden Gone`
+- `Meloncholy`
+- `Flypack`
 
 # Ammo
 
