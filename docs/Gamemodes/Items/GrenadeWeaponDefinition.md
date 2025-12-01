@@ -42,7 +42,7 @@ The force that the projectile is launched with. For reference, the Flashbang has
 
 `Type: number`
 
-The time, in seconds, before the grenade explodes.
+The time, in seconds, before the grenade explodes. If this is negative, the grenade will explode on impact.
 
 ### ExplosionInfo
 
