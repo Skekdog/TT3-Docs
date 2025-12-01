@@ -32,12 +32,6 @@ The sound to play when the grenade is thrown.
 
 The projectile of the grenade.
 
-### ProjectileForce
-
-`Type: number`
-
-The force that the projectile is launched with. For reference, the Flashbang has a force of 30, and the Discombobulator has a force of 60.
-
 ### FuseTime
 
 `Type: number`
