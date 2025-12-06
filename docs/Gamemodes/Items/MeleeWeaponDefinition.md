@@ -144,6 +144,26 @@ Called on the client when the client is hit.
 | item | `ItemDefinitionOnHitClient` | | The item. |
 | hitPart | `BasePart` | | The part that was hit. |
 
+### OnAlternateActivateClient
+
+Called on the client when alternate fire is initially held down.
+
+#### Parameters
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| item | `AnyItem` | | The item. |
+
+### OnAlternateDeactivateClient
+
+Called on the client when alternate fire is released.
+
+#### Parameters
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| item | `AnyItem` | | The item. |
+
 ## Actions
 
 ### AlternateFireClient

@@ -44,6 +44,34 @@ If true, the primary action of the item is toggled (i.e, you must click LMB). If
 
 If true, the alternate action of the item is toggled (i.e, you must click RMB). If false, the alternate action is triggered every frame until it is released.
 
+## Hooks
+
+:::note
+
+All functions are optional.
+
+:::
+
+### OnAlternateActivateClient
+
+Called on the client when alternate fire is initially held down.
+
+#### Parameters
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| item | `AnyItem` | | The item. |
+
+### OnAlternateDeactivateClient
+
+Called on the client when alternate fire is released.
+
+#### Parameters
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| item | `AnyItem` | | The item. |
+
 ## Actions
 
 :::note

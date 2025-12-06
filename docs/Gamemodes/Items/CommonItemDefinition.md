@@ -132,3 +132,11 @@ Called on the server when the item is equipped.
 ### OnUnequipServer
 
 Called on the server when the item is unequipped.
+
+### OnActivateClient
+
+Called on the client when primary fire is initially held down.
+
+### OnDeactivateClient
+
+Called on the client when primary fire is released.
