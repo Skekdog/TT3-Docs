@@ -40,6 +40,7 @@ See also: [`Classes.Item`](/Classes/Items/Item), [`Gamemodes.CommonItemDefinitio
 - `Golden Gun`
 - `UMP`
 - `FreezeGrenade` (Freeze Grenade)
+- `NyanGun` (Nyan Gun)
 <br/>
 - `Crowbar`
 - `Magneto Stick`
