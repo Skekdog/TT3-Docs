@@ -31,6 +31,7 @@ Registers a custom action, in the specified slot. If the slot is not available, 
 | name | `string` | | The name of the action. |
 | callback | `() -> ()` | | The callback to run when the action is triggered. |
 | preferredSlot | `number?` | | The slot to register the action in. |
+| displayName | `string?` | | The name to show the user. |
 
 #### Returns
 
