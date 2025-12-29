@@ -32,6 +32,24 @@ The `ItemDefinition` of the item.
 
 The model of the item. This is a clone of the model from `ItemDefinition.Model`. Nil if `ItemDefinition.Model` is nil.
 
+### PreventUnequip
+
+`Type: boolean?`
+
+If true, this item cannot be unequiped. Similar to ItemDefinition.PreventUnequip, but only applies to a specific instance of an item.
+
+### PreventPrimaryFire
+
+`Type: boolean?`
+
+If true, primary fire is disabled.
+
+### PreventAlternateFire
+
+`Type: boolean?`
+
+If true, alternate fire is disabled.
+
 ### Extras
 
 `Type: Extras`

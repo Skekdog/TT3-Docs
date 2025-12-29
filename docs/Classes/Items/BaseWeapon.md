@@ -14,6 +14,24 @@ These properties and methods are common to all weapon items (`GrenadeWeapon`, `G
 
 The model of the weapon. This is a clone of the model from `ItemDefinition.Model`.
 
+### PreventUnequip
+
+`Type: boolean?`
+
+If true, this item cannot be unequiped. Similar to CommonItemDefinition.PreventUnequip, but only applies to a specific instance of an item.
+
+### PreventPrimaryFire
+
+`Type: boolean?`
+
+If true, primary fire is disabled.
+
+### PreventAlternateFire
+
+`Type: boolean?`
+
+If true, alternate fire is disabled.
+
 ### Extras
 
 `Type: Extras`
