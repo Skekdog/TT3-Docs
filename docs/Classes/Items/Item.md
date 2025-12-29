@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Item
 
-:::info
+:::note
 
 This class does **not** inherit additional properties or methods from `BaseWeapon`.
 

@@ -10,7 +10,7 @@ Once you have the general structure of your map or gamemode down, you may want t
 
 To do this, you should use the Publish function of the Traitor! SDK. Once published, you should configure the asset on the creator store - make sure it is distributed publically.
 
-:::info
+:::note
 
 This will make your asset publically available; anyone will be able to download and use it.
 

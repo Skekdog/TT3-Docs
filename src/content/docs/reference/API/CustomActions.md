@@ -1,10 +1,10 @@
 ---
-sidebar_position: 2.8
+title: CustomActions
+sidebar:
+    order: 2.8
 ---
 
-# CustomActions
-
-:::warning
+:::caution
 
 This API is only accessible from the client.
 

@@ -1,10 +1,10 @@
 ---
-sidebar_position: 6
+title: GetMapObject
+sidebar:
+    order: 6
 ---
 
-# GetMapObject
-
-:::info
+:::note
 
 This API can be used from both the client and the server.
 

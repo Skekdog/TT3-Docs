@@ -1,10 +1,10 @@
 ---
-sidebar_position: 2.75
+title: StandardGame
+sidebar:
+    order: 2.75
 ---
 
-# StandardGame
-
-:::warning
+:::caution
 
 This API is only accessible from the server.
 
@@ -18,7 +18,7 @@ This API is a module. You should specify function names when using this API.
 
 The StandardGame API is used to get, create, and modify base-game definitions of items, ammo, and interactables.
 
-:::warning
+:::caution
 
 This API will only return base-game items, ammo, and interactables. It will not return any custom items, ammo, or interactables.
 
@@ -127,7 +127,7 @@ Gets all `InteractableDefinition` objects.
 
 ## Module Functions
 
-:::info
+:::note
 
 These functions are part of a sub-module of this API.
 

@@ -1,10 +1,10 @@
 ---
-sidebar_position: 9
+title: TextColor
+sidebar:
+    order: 9
 ---
 
-# TextColor
-
-:::info
+:::note
 
 This API can be used from both the client and the server.
 

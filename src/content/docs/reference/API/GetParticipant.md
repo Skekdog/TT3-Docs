@@ -1,10 +1,10 @@
 ---
-sidebar_position: 4
+title: GetParticipant
+sidebar:
+    order: 4
 ---
 
-# GetParticipant
-
-:::warning
+:::caution
 
 This API is only accessible from the server.
 
