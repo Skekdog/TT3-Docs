@@ -31,6 +31,7 @@ See also: [`Classes.Item`](/Classes/Items/Item), [`Gamemodes.CommonItemDefinitio
 - `Newton Launcher`
 - `Poltergeist`
 - `MelonLauncher`
+- `Spoon`
 <br/>
 - `DNAScanner` (DNA Scanner)
 - `Defuser`
@@ -41,6 +42,8 @@ See also: [`Classes.Item`](/Classes/Items/Item), [`Gamemodes.CommonItemDefinitio
 - `UMP`
 - `FreezeGrenade` (Freeze Grenade)
 - `NyanGun` (Nyan Gun)
+- `Jetpack`
+- `Cheeze`
 <br/>
 - `Crowbar`
 - `Magneto Stick`
