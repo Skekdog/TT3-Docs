@@ -1,10 +1,10 @@
 ---
-sidebar_position: 5
+title: GetRound
+sidebar:
+    order: 5
 ---
 
-# GetRound
-
-:::warning
+:::caution
 
 This API is only accessible from the server.
 

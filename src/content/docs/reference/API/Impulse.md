@@ -1,10 +1,10 @@
 ---
-sidebar_position: 3.5
+title: Impulse
+sidebar:
+    order: 3.5
 ---
 
-# Impulse
-
-:::warning
+:::caution
 
 This API is only accessible from the server.
 
@@ -18,7 +18,7 @@ This API is a module. You should specify function names when using this API.
 
 Impulses apply a force to an object in a specific direction, causing movement. If the object is a prop, it will deal damage to anything it hits.
 
-:::warning
+:::caution
 
 Impulses are not guaranteed to actually result in movement. You should not rely on an object being moved by an impulse.
 

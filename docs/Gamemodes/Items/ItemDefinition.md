@@ -107,7 +107,7 @@ Called when the primary action of the item is triggered.
 
 Called when the primary action of the item is triggered on the server.
 
-:::warning
+:::caution
 
 The `position` and `direction` parameters are supplied by the client. You should perform sanity checks to make sure they are not unreasonable. In future, these may be performed automatically.
 
@@ -119,7 +119,7 @@ Called when the alternate action of the item is triggered.
 
 Called when the alternate action of the item is triggered on the server.
 
-:::warning
+:::caution
 
 The `position` and `direction` parameters are supplied by the client. You should perform sanity checks to make sure they are not unreasonable. In future, these may be performed automatically.
 

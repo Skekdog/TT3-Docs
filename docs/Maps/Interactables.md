@@ -143,6 +143,6 @@ export type ButtonServer = {
 }
 ```
 
-:::warning
+:::caution
 Unlike other map code, ButtonServer receives a `Player` instance instead of a `Participant`.
 :::

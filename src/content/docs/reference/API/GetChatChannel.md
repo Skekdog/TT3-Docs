@@ -1,10 +1,10 @@
 ---
-sidebar_position: 7.6
+title: GetChatChannel
+sidebar:
+    order: 7.6
 ---
 
-# GetChatChannel
-
-:::info
+:::note
 
 This API can be used from both the client and the server.
 

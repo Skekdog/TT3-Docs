@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Structure
 
-:::info
+:::note
 
 The best way to learn the map structure is by example, which you can find in the SDK plugin.
 

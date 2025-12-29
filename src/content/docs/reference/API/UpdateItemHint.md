@@ -1,10 +1,10 @@
 ---
-sidebar_position: 6
+title: UpdateItemHint
+sidebar:
+    order: 6
 ---
 
-# UpdateItemHint
-
-:::warning
+:::caution
 
 This API is only accessible from the client.
 

@@ -32,7 +32,7 @@ The `MeleeWeaponDefinition` of the melee.
 
 The last time (as returned by `workspace:GetServerTimeNow()`) the primary fire of the melee was used.
 
-:::warning
+:::caution
 
 This does not get set when alternate fire is used.
 

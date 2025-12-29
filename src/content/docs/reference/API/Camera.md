@@ -1,10 +1,9 @@
 ---
-sidebar_position: 2.8
+title: Camera
+sidebar:
+    order: 2.8
 ---
-
-# Camera
-
-:::warning
+:::caution
 
 This API is only accessible from the client.
 

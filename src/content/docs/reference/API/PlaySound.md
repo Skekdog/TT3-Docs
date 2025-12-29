@@ -1,16 +1,16 @@
 ---
-sidebar_position: 8
+title: PlaySound
+sidebar:
+    order: 8
 ---
 
-# PlaySound
-
-:::info
+:::note
 
 This API can be used from both the client and the server.
 
 :::
 
-:::warning
+:::caution
 
 This API uses metatables to act as both a module and a function.
 

@@ -1,10 +1,10 @@
 ---
-sidebar_position: 6.5
+title: GetAssemblyMass
+sidebar:
+    order: 6.5
 ---
 
-# GetAssemblyMass
-
-:::info
+:::note
 
 This API can be used from both the client and the server.
 
@@ -16,7 +16,7 @@ This API directly returns a function. You should not specify a function name.
 
 :::
 
-:::warning
+:::caution
 
 This API is expensive! Avoid calling it too often, such as every frame. It is fine to use otherwise.
 

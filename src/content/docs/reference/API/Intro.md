@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+title: Intro
+sidebar:
+    order: 1
 ---
-
-# Intro
 
 The public API is a collection of functions that you can use to access and modify the game state. It is accessible from maps, gamemodes, and other scripts within.
 
