@@ -1,10 +1,10 @@
 ---
-sidebar_position: 7.5
+title: ScreenMessage
+sidebar:
+    order: 7.5
 ---
 
-# ScreenMessage
-
-:::info
+:::note
 
 This API can be used from both the client and the server.
 

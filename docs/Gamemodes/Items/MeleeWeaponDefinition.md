@@ -183,7 +183,7 @@ Called on the client when the alternate action is used.
 
 Called on the server when the alternate action is used.
 
-:::warning
+:::caution
 
 The `position` and `direction` parameters are supplied by the client. You should perform sanity checks to make sure they are not unreasonable. In future, these may be performed automatically.
 

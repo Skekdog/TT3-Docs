@@ -1,10 +1,10 @@
 ---
-sidebar_position: 7
+title: Notification
+sidebar:
+    order: 7
 ---
 
-# Notification
-
-:::info
+:::note
 
 This API can be used from both the client and the server.
 

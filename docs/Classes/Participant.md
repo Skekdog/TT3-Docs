@@ -293,7 +293,7 @@ Calls to this will silently fail if the participant's character is already in th
 
 Despawns the participant's character, additionally dropping their items and clearing their ammo. No effect if the participant has no character.
 
-:::warning
+:::caution
 
 Calls to this will silently fail if the participant's character is currently in the process of being spawned.
 

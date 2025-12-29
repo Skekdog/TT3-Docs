@@ -56,7 +56,7 @@ The part where the damage was dealt (i.e, the part where the bullet hit the part
 
 If true, karma will not be affected by the damage.
 
-:::info
+:::note
 
 This does **not** determine whether karma will affect the damage dealt.
 

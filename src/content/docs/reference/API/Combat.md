@@ -1,10 +1,10 @@
 ---
-sidebar_position: 3
+title: Combat
+sidebar:
+    order: 3
 ---
 
-# Combat
-
-:::warning
+:::caution
 
 This API is only accessible from the server.
 

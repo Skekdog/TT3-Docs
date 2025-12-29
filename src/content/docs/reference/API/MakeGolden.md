@@ -1,10 +1,10 @@
 ---
-sidebar_position: 7
+title: MakeGolden
+sidebar:
+    order: 7
 ---
 
-# MakeGolden
-
-:::warning
+:::caution
 
 This API is only accessible from the server.
 

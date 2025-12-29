@@ -1,10 +1,10 @@
 ---
-sidebar_position: 3.1
+title: Fire
+sidebar:
+    order: 3.1
 ---
 
-# Fire
-
-:::info
+:::note
 
 This API can be used from both the client and the server. Note that client-side usage will only allow for visuals.
 

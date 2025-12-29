@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+title: Using APIs
+sidebar:
+    order: 2
 ---
-
-# Using APIs
 
 The public APIs are designed to be easily accessible and usable no matter the context. To use an API, you can import it like so:
 

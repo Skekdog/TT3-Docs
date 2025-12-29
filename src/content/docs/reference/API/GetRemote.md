@@ -1,10 +1,10 @@
 ---
-sidebar_position: 2.8
+title: GetRemote
+sidebar:
+    order: 2.8
 ---
 
-# GetRemote
-
-:::info
+:::note
 
 This API can be used from both the client and the server.
 
