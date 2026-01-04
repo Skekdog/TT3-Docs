@@ -1,5 +1,5 @@
 ---
-title: Secret APIs
+title: Hidden APIs
 sidebar:
     order: 2.5
 ---
