@@ -5,7 +5,7 @@ title: ExplosionInfo
 ---
 `ExplosionInfo` is a table that contains basic properties about an explosion.
 
-See also: [`ExplosionParams`](/Classes/ExplosionParams).
+See also: [`ExplosionParams`](/Traitor-Docs/reference/classes/explosionparams).
 
 ## Properties
 

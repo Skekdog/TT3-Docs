@@ -5,7 +5,7 @@ sidebar:
 ---
 `ExplosionParams` contains the specific info about an explosion that is about to occur.
 
-See also: [`ExplosionInfo`](/Classes/Types/ExplosionInfo).
+See also: [`ExplosionInfo`](/Traitor-Docs/reference/classes/types/explosioninfo).
 
 ## Properties
 

@@ -7,7 +7,7 @@ Not to be confused with the Roblox [Highlight](https://create.roblox.com/docs/re
 
 Highlights are shown at the end of the round in the highlights page. They are used to show off notable things that players did throughout the round.
 
-See also: [`Round:AddHighlight()`](/Classes/Round#addhighlight)
+See also: [`Round:AddHighlight()`](/Traitor-Docs/reference/classes/round#addhighlight)
 
 ## Properties
 

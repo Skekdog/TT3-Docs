@@ -3,7 +3,7 @@ title: Participant
 sidebar:
     order: 2
 ---
-A `Participant` represents a player in the round. You can get a `Participant` using the [`GetParticipant`](/API/GetParticipant) API.
+A `Participant` represents a player in the round. You can get a `Participant` using the [`GetParticipant`](/Traitor-Docs/reference/api/getparticipant) API.
 
 ## Properties
 
