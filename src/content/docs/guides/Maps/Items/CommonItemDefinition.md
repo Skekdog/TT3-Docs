@@ -61,7 +61,7 @@ If true, this item will make non-evil players a free kill when they have it equi
 
 The group that this item belongs to. Only one item from a group can be present in an inventory at a time. If `nil`, this item is passive and not part of any group. Item groups are denoted by the specific table reference, not PreferredSlot. You must use the same table when defining the item group.
 
-See also: [`API.StandardGame#ItemGroups`](/API/StandardGame#itemgroups).
+See also: [`API.StandardGame#ItemGroups`](/Traitor-Docs/reference/api/standardgame#itemgroups).
 
 ```lua
 local item: Types.ItemDefinition = {

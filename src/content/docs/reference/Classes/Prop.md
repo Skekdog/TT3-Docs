@@ -6,7 +6,7 @@ sidebar:
 
 The prop class represents a prop loaded in the current map.
 
-See also: [Maps.Props](/Maps/Props.md).
+See also: [Maps.Props](/Traitor-Docs/guides/maps/props.md).
 
 ## Properties
 

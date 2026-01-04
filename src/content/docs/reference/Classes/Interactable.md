@@ -6,7 +6,7 @@ sidebar:
 
 The interactable class represents a loaded interactable.
 
-See also: [Maps.Interactables](/Maps/Interactables.md).
+See also: [Maps.Interactables](/Traitor-Docs/guides/maps/interactables.md).
 
 ## Properties
 

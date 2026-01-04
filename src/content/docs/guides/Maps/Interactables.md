@@ -3,7 +3,7 @@ sidebar:
   order: 6
 title: Interactables
 ---
-See also: [Classes.Interactable](/Classes/Interactable.md).
+See also: [Classes.Interactable](/Traitor-Docs/reference/classes/interactable.md).
 
 An interactable is a special kind of prop that a player can interact with. To make something into an interactable, you should add the `Interactable` tag to it.
 

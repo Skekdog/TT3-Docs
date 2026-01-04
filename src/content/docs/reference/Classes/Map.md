@@ -5,7 +5,7 @@ sidebar:
 ---
 Represents a map. Used to access the active structure of the map, and to get map info.
 
-See also: [`Maps.Intro`](/Maps/Intro.md)
+See also: [`Maps.Intro`](/Traitor-Docs/guides/maps/intro.md)
 
 ## Properties
 
@@ -13,7 +13,7 @@ See also: [`Maps.Intro`](/Maps/Intro.md)
 
 `Type: Instance`
 
-The map's loaded structure, as detailed in [Structure](/Maps/Structure.md).
+The map's loaded structure, as detailed in [Structure](/Traitor-Docs/guides/maps/structure.md).
 
 ### Name
 
