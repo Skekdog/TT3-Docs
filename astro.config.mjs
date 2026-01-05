@@ -7,6 +7,7 @@ import starlightLinksValidator from "starlight-links-validator";
 export default defineConfig({
   site: "https://skekdog.github.io",
   base: "/Traitor-Docs",
+  output: "static",
   integrations: [
     starlight({
       title: "Traitor! Docs",
@@ -14,10 +15,8 @@ export default defineConfig({
       logo: {
         src: "./src/assets/logo.svg",
       },
+      
       plugins: [starlightLinksValidator()],
-      components: {
-        Head: "./src/components/Head.astro",
-      },
       social: [
         {
           icon: "github",

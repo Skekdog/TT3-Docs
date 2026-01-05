@@ -5,7 +5,7 @@ title: RoleDefinition
 ---
 Roles are... well they're roles. Gamemodes can define roles and specify them in the `Roles` field of the `GamemodeDefinition`.
 
-See also: [`Classes.Role`](/Traitor-Docs/reference/classes/role.md)
+See also: [`Classes.Role`](/Traitor-Docs/reference/classes/role)
 
 ## Properties
 

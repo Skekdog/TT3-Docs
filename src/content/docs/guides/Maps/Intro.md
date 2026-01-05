@@ -9,4 +9,4 @@ This guide will assume you have some familiarity with Roblox Studio. If not, I w
 
 To start, you should install the [Traitor! SDK](https://create.roblox.com/store/asset/107938745988414/) plugin. This plugin provides example maps, API types, and the tools you need to successfully load your map in-game.
 
-See also: [`Classes.Map`](/Traitor-Docs/reference/classes/map.md)
+See also: [`Classes.Map`](/Traitor-Docs/reference/classes/map)
