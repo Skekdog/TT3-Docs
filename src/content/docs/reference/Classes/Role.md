@@ -5,7 +5,7 @@ sidebar:
 ---
 A loaded role. You can get a `Role` object using `Round:GetRoleFromRoleName()`, or through `Participant:GetRole()`.
 
-See also: [`Gamemodes.RoleDefinition`](/Traitor-Docs/guides/gamemodes/role-definition).
+See also: [`Gamemodes.RoleDefinition`](/Traitor-Docs/guides/gamemodes/roledefinition).
 
 ## Properties
 
