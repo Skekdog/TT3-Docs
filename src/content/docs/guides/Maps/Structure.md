@@ -9,6 +9,13 @@ The best way to learn the map structure is by example, which you can find in the
 
 :::
 
+```
+- Map (Folder)
+	- Static (Folder)
+	- Dynamic (Folder)
+	- PlayerSpawns (Folder)
+```
+
 Your map should follow a certain structure:
 
 ![an image of the map structure](~/assets/docs/maps/map-structure-1.png)
