@@ -11,12 +11,7 @@ The best way to learn the map structure is by example, which you can find in the
 
 Your map should follow a certain structure:
 
-```
-- Map (Folder)
-	- Static (Folder)
-	- Dynamic (Folder)
-	- PlayerSpawns (Folder)
-```
+![an image of the map structure](~/assets/docs/maps/map-structure-1.png)
 
 Static geometry should be placed in the Static folder. This folder will be loaded once per map rotation; therefore, parts here should be anchored and unmoving. Parts which do move, like props, items, doors, and other movable objects should be placed in the Dynamic folder - this folder will be reloaded every round. You can follow this through for scripts as well - scripts in the Dynamic folder will be reloaded every round, and scripts in the Static folder will be loaded once per map rotation.
 

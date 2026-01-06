@@ -1,6 +1,0 @@
-<svg width="1000" height="1000" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
-  <!-- Rounded red square with white stroke -->
-  <rect x="25" y="25" width="950" height="950" rx="128" ry="128" fill="#F00000" stroke="white" stroke-width="50"/>
-
-  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" font-size="768" dy="0.03em 25" dx="-25" fill="white" font-family="Arial, sans-serif">T</text>
-</svg>
