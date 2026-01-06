@@ -11,9 +11,13 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Traitor! Docs",
-      favicon: "images/logo.svg",
+      favicon: "./src/assets/logo.svg",
       logo: {
         src: "./src/assets/logo.svg",
+      },
+
+      components: {
+        Head: "./src/components/head.astro"
       },
       
       plugins: [starlightLinksValidator()],
