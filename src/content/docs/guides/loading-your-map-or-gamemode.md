@@ -1,10 +1,8 @@
 ---
 title: Loading your map or gamemode
-description: a guide on how to load gamemodes
 sidebar:
     order: 2
 ---
-import { Aside } from '@astrojs/starlight/components';
 
 See also: [Commands](/Traitor-Docs/guides/commands).
 
@@ -12,9 +10,11 @@ Once you have the general structure of your map or gamemode down, you may want t
 
 To do this, you should use the Publish function of the Traitor! SDK. Once published, you should configure the asset on the creator store - make sure it is distributed publicly.
 
-<Aside type="caution">
-    This will make your asset publicly available; anyone will be able to download and use it.
-</Aside>
+:::caution
+
+This will make your asset publicly available; anyone will be able to download and use it.
+
+:::
 
 Once distributed, you can now load it in Traitor! To do this, create a free private server in the [Labs](https://www.roblox.com/games/118757439615813/) game, and join it. Once you have joined, you will have access to a console, where you can run commands to host your server.
 
